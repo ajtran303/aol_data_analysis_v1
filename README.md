@@ -52,7 +52,7 @@ I got a copy of the archive from some server at McGill CIM (*Centre* for Intelli
 
 Interestingly, there's a README included and at the end of it, it says `Copyright (2006) AOL`.
 
-**Caveat emptor:*** This dataset contains explicit text references (like search queries for XXX) and personally identifiable information (people have been searching their own name since the beginning of search engines). I make no guarantees or endorsements about its contents.
+<!-- **Caveat emptor:*** This dataset contains explicit text references (like search queries for XXX) and personally identifiable information (people have been searching their own name since the beginning of search engines). I make no guarantees or endorsements about its contents. -->
 
 ## Get the Data
 
@@ -62,6 +62,6 @@ I used command line tools to download, decompress, and collect all the data into
 $ bash scripts/download-aol-data.sh
 ```
 
-This script will create a directory, `data/` and download the raw data into one text file, `aol-data.txt.` That file is around 2.2G in size. Also included is `U500k_README.txt` which has really useful information about the data.
+This script will create a directory, `data/` and download the raw data in tab-delimted text files, around 2.2G in size. Also included is `U500k_README.txt` which has really useful information about the data.
 
 ***Note:*** The `data/` directory is in .gitignore, so those GB won't be uploaded to source control.
