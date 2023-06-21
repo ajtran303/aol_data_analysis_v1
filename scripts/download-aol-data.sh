@@ -26,7 +26,7 @@ function download_archive {
 function extract_archives {
   echo "Extracting archives..."
   gzip -d aol-data.tar.gz
-  tar xv aol-data.tar && rm aol-data.tar
+  tar xf aol-data.tar && rm aol-data.tar
   gzip -d /AOL-user-ct-collection/*.gz
 
   if test ! -d data;
@@ -42,7 +42,7 @@ function extract_archives {
 
 function main {
   echo "Initializing script..."
-  echo "Downloading to '/data' ..."
+  echo "Downloading to 'data/' ..."
 
   # some function calls will exit early on failure
   check_aol_archive_alive
