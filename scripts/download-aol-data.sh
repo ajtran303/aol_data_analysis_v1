@@ -27,10 +27,15 @@ function extract_archives {
   echo "Extracting archives..."
   gzip -d aol-data.tar.gz
   tar xv aol-data.tar && rm aol-data.tar
+  gzip -d /AOL-user-ct-collection/*.gz
 
-  mv AOL-user-ct-collection data
-
-  gzip -d /data/*.gz
+  if test ! -d data;
+    then
+      mv AOL-user-ct-collection data
+    else
+      mv AOL-user-ct-collection/* data
+      rm -rf AOL-user-ct-collection
+  fi
 
   success
 }
