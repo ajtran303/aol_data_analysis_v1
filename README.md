@@ -52,7 +52,7 @@ I got a copy of the archive from some server at McGill CIM (*Centre* for Intelli
 
 Interestingly, there's a README included and at the end of it, it says `Copyright (2006) AOL`.
 
-<!-- **Caveat emptor:*** This dataset contains explicit text references (like search queries for XXX) and personally identifiable information (people have been searching their own name since the beginning of search engines). I make no guarantees or endorsements about its contents. -->
+***Caveat emptor:*** This dataset contains explicit text references (like search queries for XXX) and personally identifiable information (people have been searching their own name since the beginning of search engines). I make no guarantees or endorsements about its contents.
 
 ## Get the Data
 
